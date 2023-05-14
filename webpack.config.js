@@ -1,8 +1,8 @@
 const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode: "development",
+  mode: "development",
   entry: "./src/index.js",
   devtool: "inline-source-map",
   devServer: {
@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: "ToDo List",
+      title: "ToDo List",
     }),
   ],
   output: {
@@ -30,7 +30,12 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
+      },
+      // Rule for handling icons
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+        type: "asset/resource",
       },
     ],
   },

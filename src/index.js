@@ -1,7 +1,6 @@
 import todoList from './components/views/todolist/todoList';
-// import Stylesheets
-import "./style.css";
 
-console.log('works');
+import 'font-awesome/css/font-awesome.css';
+
 
 todoList();

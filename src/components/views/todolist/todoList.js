@@ -54,6 +54,7 @@ function newToDo() {
   return `
     <div class="new-to-do">
       <button>
+        <i class="fa fa-plus"></i>
         Add New Task
       </button>
     </div>
