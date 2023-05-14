@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Raleway;
+    /* src: url(./../../../assets/fonts/Raleway-VariableFont_wght.ttf); */
+    src: url(./../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+.header {
+    grid-area: header;
+    height: 5rem;
+
+    background-color: #CCCCCC;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+.header-logo img {
+    width: 70px;
+}
+
+.logo-text {
+    font-family: Raleway, sans-serif;
+    font-style: italic;
+}
+
