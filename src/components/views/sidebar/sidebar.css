@@ -17,9 +17,26 @@ aside {
 
 .new-project-btn {
   margin: 1rem 0;
+  text-align: center;
 }
 
-/* Accordion styles */
+.new-project-btn button {
+  background: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main-button {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 3px;
+}
+
+/* #region Accordion styles */
 .accordion {
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -54,6 +71,8 @@ aside {
   background-color: #d9d9d9;
   color: #333333;
 }
+
+/* #endregion */
 
 /* Arrow icon styles */
 .accordion-arrow {

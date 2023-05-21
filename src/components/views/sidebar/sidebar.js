@@ -19,9 +19,12 @@ export default function getSideBar() {
   const newProjectBtnDiv = document.createElement("div");
   newProjectBtnDiv.classList.add("new-project-btn");
   newProjectBtnDiv.innerHTML = `
-    <button> New Project </button>
+    <button>
+      <i class="fa fa-plus"></i> 
+      New Project 
+    </button>
   `;
-  
+
   mainNavDiv.append(newProjectBtnDiv);
 
   // Define the accordion items as an array of objects
@@ -78,4 +81,26 @@ export default function getSideBar() {
   });
 
   return sidebarContent;
+}
+
+function displayNewProjectForm() {
+  // const overlayDiv = document.createElement("div");
+  // overlayDiv.setAttribute("id", "overlay");
+  // const newProjectForm = document.createElement("div");
+
+  // newProjectForm.append(overlayDiv);
+
+  // return newProjectForm;
+
+  return `
+    <div id="overlay"></div>
+    <div id="new-project-form">
+      <form>
+        <label for="projectName">Project Name </label>
+        <input type="text" />
+        <button>Submit</button>
+      </form>
+    </div>
+  `
+
 }
